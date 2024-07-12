@@ -1,8 +1,12 @@
 import { categories } from "../data/categories"
-import { useState,ChangeEvent } from "react"
+import { useState,ChangeEvent, FormEvent, Dispatch } from "react"
 import { Activity } from "../types"
+import { ActivityActions } from "../reducers/activity-reducer"
 
-export default function Form() {
+type FormProps = {
+    dispatch: Dispatch<ActivityActions>
+}
+export default function Form({dispatch}: FormProps) {
 
     // Inicializa el state con un arreglo
     const [activity, setActivity] = useState<Activity>({
@@ -27,9 +31,18 @@ export default function Form() {
         const { name, calories } = activity
         return name.trim() !== '' && calories > 0
     }
+
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        dispatch({type: 'save-activity', payload: {newActivity: activity}})
+    }
+
     return (
         <form
-            className="space-y-5 bg-white shadow p-10 rounded-10">
+            className="space-y-5 bg-white shadow p-10 rounded-10"
+            onSubmit={handleSubmit}
+            >
+            
             <div className="grid grid-cols-1 gap-3">
                 <label htmlFor="category" className="font-bold">Categoría: </label>
                 <select
