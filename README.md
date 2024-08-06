@@ -9,7 +9,8 @@
 <p> Creación de una app para contar las calorías ganadas y gastadas. Se utiliza un formulario y se van añadiendo las comidas y el ejericio que se va realizando. Al final se obtiene una diferencia entre las calorías ganadas y gastadas.
 Tambiém se podrá editar y eliminar la lista creada. </p>
 
-<b>Proyecto: <a href="https://playful-pika-6d79b1.netlify.app/" target="_blank">Contador de calorías<a></b>
+<b>Proyecto: <a href="https://playful-pika-6d79b1.netlify.app/" target="_blank">Contador de calorías</a></b>
+
 
 <h2> :heavy_check_mark: Características</h2>
 <p> Proyecto creado en React donde se aprenderá a inferir el Type de un evento, 
