@@ -29,4 +29,8 @@ se introducirá la utilización del useReducer, se generarán ID's únicos con l
 </ul>
 
 <h2>Idea del proyecto</h2>
-<p>Este proyecto fue realizado durante el curso de <a href="https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/?couponCode=KEEPLEARNING">React y TypeScript</a></p>
+<p>Tercer proyecto realizado durante el curso de <a href="https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/?couponCode=KEEPLEARNING">React y TypeScript</a></p>
+
+<a href="https://github.com/antii16/calculadora-propinas">Ver proyecto anterior </a>
+
+<a href="https://github.com/antii16/control-gastos-contextapi">Ver proyecto siguiente </a>
